@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FAFAFA">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+    <!--自定义toolbar的title 和subtitle -->
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:maxLines="1"
+        android:layout_marginRight="20dp"
+        android:text="Right"
+        android:textColor="@color/color_373737" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:text="title"
+        android:textColor="@color/color_373737" />
+
+</androidx.appcompat.widget.Toolbar>

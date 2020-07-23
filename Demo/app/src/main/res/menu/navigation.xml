@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="J"
+        android:icon="@drawable/ic_looks_1_black_24dp"
+        android:id="@+id/java"/>
+
+    <item
+        android:title="K"
+        android:icon="@drawable/ic_looks_2_black_24dp"
+        android:id="@+id/kotlin"/>
+
+    <item
+        android:title="A"
+        android:icon="@drawable/ic_looks_3_black_24dp"
+        android:id="@+id/android"/>
+
+    <item
+        android:title="F"
+        android:icon="@drawable/ic_looks_4_black_24dp"
+        android:id="@+id/frame"/>
+
+    <item
+        android:title="P"
+        android:icon="@drawable/ic_looks_5_black_24dp"
+        android:id="@+id/project"/>
+</menu>
+
