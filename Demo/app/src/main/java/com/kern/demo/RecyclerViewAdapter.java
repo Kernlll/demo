@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.kern.demo.project.ApplicationActivity;
+
 import java.util.List;
 
 import butterknife.BindView;
@@ -61,6 +63,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+            title.setOnClickListener(this);
         }
 
         @Override
@@ -69,7 +72,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Intent intent = null;
             switch (text) {
                 case "应用相关操作":
-
+                    intent = new Intent(context, ApplicationActivity.class);
                     break;
             }
             context.startActivity(intent);
