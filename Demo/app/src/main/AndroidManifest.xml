@@ -18,6 +18,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".project.ApplicationActivity"></activity>
         <activity android:name=".frame.RxJavaActivity"></activity>
+        <activity android:name=".frame.rxjava.RxCreateActivity"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

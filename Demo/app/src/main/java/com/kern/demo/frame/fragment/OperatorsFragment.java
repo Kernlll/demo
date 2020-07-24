@@ -1,7 +1,10 @@
 package com.kern.demo.frame.fragment;
 
+import android.content.Intent;
+
 import com.kern.demo.CategoryBaseFragment;
 import com.kern.demo.R;
+import com.kern.demo.frame.rxjava.RxCreateActivity;
 import com.kern.demo.mode.OperatorModel;
 
 import java.util.ArrayList;
@@ -52,6 +55,11 @@ public class OperatorsFragment extends CategoryBaseFragment {
 
     @Override
     protected void itemClick(int position) {
+        switch (position) {
+            case 0:
+                startActivity(new Intent(getActivity(), RxCreateActivity.class));
+                break;
+        }
 
     }
 }
