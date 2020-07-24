@@ -18,17 +18,24 @@
             android:text="已安装应用"></TextView>
 
         <EditText
+            android:hint="应用名或者包名"
             android:id="@+id/installed_package"
             android:layout_alignParentLeft="true"
             android:layout_below="@id/title1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </EditText>
-
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/installed_package"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+        </ImageView>
         <TextView
             android:id="@+id/result1"
-            android:layout_alignParentLeft="true"
             android:layout_below="@id/installed_package"
+            android:layout_toRightOf="@id/icon1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ></TextView>
@@ -51,12 +58,21 @@
             android:layout_width="match_parent"
             android:layout_below="@id/title2"
             android:text="选择文件"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:layout_height="wrap_content">
         </Button>
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/no_installed_package"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+        </ImageView>
         <TextView
             android:id="@+id/result2"
-            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/icon2"
             android:layout_below="@id/no_installed_package"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

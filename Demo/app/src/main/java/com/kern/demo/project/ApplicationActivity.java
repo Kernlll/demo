@@ -50,5 +50,6 @@ public class ApplicationActivity extends BaseActivity {
         viewPager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewPager);
+        setToolbarTitle("应用相关操作");
     }
 }
