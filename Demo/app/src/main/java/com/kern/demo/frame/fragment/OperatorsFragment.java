@@ -5,6 +5,9 @@ import android.content.Intent;
 import com.kern.demo.CategoryBaseFragment;
 import com.kern.demo.R;
 import com.kern.demo.frame.rxjava.RxCreateActivity;
+import com.kern.demo.frame.rxjava.RxFlatMapActivity;
+import com.kern.demo.frame.rxjava.RxMapActivity;
+import com.kern.demo.frame.rxjava.RxZipActivity;
 import com.kern.demo.mode.OperatorModel;
 
 import java.util.ArrayList;
@@ -58,6 +61,17 @@ public class OperatorsFragment extends CategoryBaseFragment {
         switch (position) {
             case 0:
                 startActivity(new Intent(getActivity(), RxCreateActivity.class));
+                break;
+            case 1:
+                startActivity(new Intent(getActivity(), RxZipActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(getActivity(), RxMapActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getActivity(), RxFlatMapActivity.class));
+                break;
+            case 4:
                 break;
         }
 

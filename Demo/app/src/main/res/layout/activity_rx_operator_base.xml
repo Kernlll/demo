@@ -11,6 +11,10 @@
         android:id="@+id/rx_operators_btn"
         style="@style/MyBtnStyle"
         android:text="@string/doSomething"/>
+    <Button
+        android:id="@+id/rx_clear_btn"
+        style="@style/MyBtnStyle"
+        android:text="clear"/>
 
     <ScrollView
         android:layout_width="match_parent"

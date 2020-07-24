@@ -1,6 +1,7 @@
 package com.kern.demo.frame.rxjava;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ public abstract class RxOperatorBaseActivity extends ToolbarBaseActivity {
     protected Button mRxOperatorsBtn;
     @BindView(R.id.rx_operators_text)
     protected TextView mRxOperatorsText;
+    @BindView(R.id.rx_clear_btn)
+    protected Button mRxClearBtn;
 
     @Override
     protected int getContentViewLayoutId() {
@@ -33,10 +36,16 @@ public abstract class RxOperatorBaseActivity extends ToolbarBaseActivity {
 
     protected abstract void doSomething();
 
-
-    @OnClick(R.id.rx_operators_btn)
-    public void onViewClicked() {
-        mRxOperatorsText.append("\n");
-        doSomething();
+    @OnClick({R.id.rx_operators_btn, R.id.rx_clear_btn})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.rx_operators_btn:
+                mRxOperatorsText.append("\n");
+                doSomething();
+                break;
+            case R.id.rx_clear_btn:
+                mRxOperatorsText.setText("\n");
+                break;
+        }
     }
 }

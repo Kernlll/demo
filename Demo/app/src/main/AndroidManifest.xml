@@ -19,6 +19,9 @@
         <activity android:name=".project.ApplicationActivity"></activity>
         <activity android:name=".frame.RxJavaActivity"></activity>
         <activity android:name=".frame.rxjava.RxCreateActivity"/>
+        <activity android:name=".frame.rxjava.RxZipActivity"/>
+        <activity android:name=".frame.rxjava.RxMapActivity"/>
+        <activity android:name=".frame.rxjava.RxFlatMapActivity"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
