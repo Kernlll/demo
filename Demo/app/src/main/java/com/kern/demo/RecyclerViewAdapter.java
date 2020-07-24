@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.kern.demo.frame.RxJavaActivity;
 import com.kern.demo.project.ApplicationActivity;
 
 import java.util.List;
@@ -73,6 +74,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             switch (text) {
                 case "应用相关操作":
                     intent = new Intent(context, ApplicationActivity.class);
+                    break;
+                case "Rxjava":
+                    intent = new Intent(context, RxJavaActivity.class);
                     break;
             }
             context.startActivity(intent);

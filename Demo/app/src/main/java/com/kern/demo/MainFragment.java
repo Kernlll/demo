@@ -91,6 +91,7 @@ public class MainFragment extends Fragment {
             case 2:
                 break;
             case 3:
+                initFrame();
                 break;
             case 4:
                 initProject();
@@ -107,6 +108,9 @@ public class MainFragment extends Fragment {
         datas.add("集合");
     }
 
+    private void initFrame() {
+        datas.add("Rxjava");
+    }
     private void initProject() {
         datas.add("应用相关操作");
     }

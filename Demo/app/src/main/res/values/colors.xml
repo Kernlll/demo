@@ -11,4 +11,6 @@
 
     <color name="text_press">#3298F7</color>
     <color name="text_normal">#373737</color>
+
+    <color name="blue">#2F98E9</color>
 </resources>
