@@ -166,6 +166,12 @@ public class ApplicationInfoFragment extends Fragment {
         editor.apply();
         PackageManager pm = getActivity().getPackageManager();
         PackageInfo info = pm.getPackageArchiveInfo(path, PackageManager.GET_ACTIVITIES);
+        if (info == null) {
+            return;
+        }
+        if (info.applicationInfo == null) {
+            return;
+        }
         String name = info.applicationInfo.loadLabel(pm).toString();
         StringBuffer buffer = new StringBuffer();
         Log.i("wangke", "get app");

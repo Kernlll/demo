@@ -41,6 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView();
         ButterKnife.bind(this);
+        ivBack.setOnClickListener(view->finish());
     }
 
     private void setContentView() {

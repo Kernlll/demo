@@ -3,11 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空备份数据和内容">
+    </Button>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="3">
 
         <TextView
             android:id="@+id/title1"
@@ -25,18 +30,26 @@
             android:layout_alignParentLeft="true"
             android:text="备份所有应用"></Button>
 
-        <TextView
-            android:id="@+id/result1"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_below="@id/backup1"
-            android:layout_alignParentLeft="true"></TextView>
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+
+        </ScrollView>
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2">
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/title2"
@@ -64,12 +77,18 @@
             android:gravity="center"
             android:text="备份"></Button>
 
-        <TextView
-            android:id="@+id/result2"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_below="@id/title2"
-            android:layout_alignParentLeft="true"></TextView>
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/result2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            ></TextView>
+        </ScrollView>
+
     </RelativeLayout>
 
 

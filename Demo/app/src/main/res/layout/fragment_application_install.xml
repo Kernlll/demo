@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title1"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C7EDCC"
+            android:text="安装应用"></TextView>
+        <Button
+            android:id="@+id/choose_apk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择APK文件"
+            ></Button>
+
+        <TextView
+            android:id="@+id/result1"
+            android:layout_below="@id/installed_package"
+            android:layout_toRightOf="@id/icon1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></TextView>
+
+
+
+</LinearLayout>

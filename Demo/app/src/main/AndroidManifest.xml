@@ -8,6 +8,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <application
         android:name=".DemoApplication"
         android:allowBackup="true"
@@ -16,8 +17,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".project.ApplicationActivity"></activity>
+
+        <activity android:name=".project.ApplicationActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"></activity>
+
+
         <activity android:name=".frame.RxJavaActivity"></activity>
+        <!--rxjava操作符-->
         <activity android:name=".frame.rxjava.RxCreateActivity"/>
         <activity android:name=".frame.rxjava.RxZipActivity"/>
         <activity android:name=".frame.rxjava.RxMapActivity"/>
@@ -65,6 +71,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
     </application>
 
 </manifest>

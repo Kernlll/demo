@@ -95,6 +95,6 @@ public class MainActivity extends BaseActivity {
             }
         });
         viewpager.setOffscreenPageLimit(4);
-        viewpager.setCurrentItem(3);
+        viewpager.setCurrentItem(4);
     }
 }
