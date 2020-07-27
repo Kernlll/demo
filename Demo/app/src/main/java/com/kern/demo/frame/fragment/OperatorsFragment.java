@@ -4,9 +4,33 @@ import android.content.Intent;
 
 import com.kern.demo.CategoryBaseFragment;
 import com.kern.demo.R;
+import com.kern.demo.frame.rxjava.RxAsyncSubjectActivity;
+import com.kern.demo.frame.rxjava.RxBehaviorSubjectActivity;
+import com.kern.demo.frame.rxjava.RxBufferActivity;
+import com.kern.demo.frame.rxjava.RxCompletableActivity;
+import com.kern.demo.frame.rxjava.RxConcatActivity;
+import com.kern.demo.frame.rxjava.RxConcatMapActivity;
 import com.kern.demo.frame.rxjava.RxCreateActivity;
+import com.kern.demo.frame.rxjava.RxDebounceActivity;
+import com.kern.demo.frame.rxjava.RxDeferActivity;
+import com.kern.demo.frame.rxjava.RxDistinctActivity;
+import com.kern.demo.frame.rxjava.RxDoOnNextActivity;
+import com.kern.demo.frame.rxjava.RxFilterActivity;
 import com.kern.demo.frame.rxjava.RxFlatMapActivity;
+import com.kern.demo.frame.rxjava.RxFlowableActivity;
+import com.kern.demo.frame.rxjava.RxIntervalActivity;
+import com.kern.demo.frame.rxjava.RxJustActivity;
+import com.kern.demo.frame.rxjava.RxLastActivity;
 import com.kern.demo.frame.rxjava.RxMapActivity;
+import com.kern.demo.frame.rxjava.RxMergeActivity;
+import com.kern.demo.frame.rxjava.RxPublishSubjectActivity;
+import com.kern.demo.frame.rxjava.RxReduceActivity;
+import com.kern.demo.frame.rxjava.RxScanActivity;
+import com.kern.demo.frame.rxjava.RxSingleActivity;
+import com.kern.demo.frame.rxjava.RxSkipActivity;
+import com.kern.demo.frame.rxjava.RxTakeActivity;
+import com.kern.demo.frame.rxjava.RxTimerActivity;
+import com.kern.demo.frame.rxjava.RxWindowActivity;
 import com.kern.demo.frame.rxjava.RxZipActivity;
 import com.kern.demo.mode.OperatorModel;
 
@@ -72,6 +96,76 @@ public class OperatorsFragment extends CategoryBaseFragment {
                 startActivity(new Intent(getActivity(), RxFlatMapActivity.class));
                 break;
             case 4:
+                startActivity(new Intent(getActivity(), RxConcatMapActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(getActivity(), RxDoOnNextActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(getActivity(), RxFilterActivity.class));
+                break;
+            case 7:
+                startActivity(new Intent(getActivity(), RxSkipActivity.class));
+                break;
+            case 8:
+                startActivity(new Intent(getActivity(), RxTakeActivity.class));
+                break;
+            case 9:
+                startActivity(new Intent(getActivity(), RxTimerActivity.class));
+                break;
+            case 10:
+                startActivity(new Intent(getActivity(), RxIntervalActivity.class));
+                break;
+            case 11:
+                startActivity(new Intent(getActivity(), RxJustActivity.class));
+                break;
+            case 12:
+                startActivity(new Intent(getActivity(), RxSingleActivity.class));
+                break;
+            case 13:
+                startActivity(new Intent(getActivity(), RxConcatActivity.class));
+                break;
+            case 14:
+                startActivity(new Intent(getActivity(), RxDistinctActivity.class));
+                break;
+            case 15:
+                startActivity(new Intent(getActivity(), RxBufferActivity.class));
+                break;
+            case 16:
+                startActivity(new Intent(getActivity(), RxDebounceActivity.class));
+                break;
+            case 17:
+                startActivity(new Intent(getActivity(), RxDeferActivity.class));
+                break;
+            case 18:
+                startActivity(new Intent(getActivity(), RxLastActivity.class));
+                break;
+            case 19:
+                startActivity(new Intent(getActivity(), RxMergeActivity.class));
+                break;
+            case 20:
+                startActivity(new Intent(getActivity(), RxReduceActivity.class));
+                break;
+            case 21:
+                startActivity(new Intent(getActivity(), RxScanActivity.class));
+                break;
+            case 22:
+                startActivity(new Intent(getActivity(), RxWindowActivity.class));
+                break;
+            case 23:
+                startActivity(new Intent(getActivity(), RxPublishSubjectActivity.class));
+                break;
+            case 24:
+                startActivity(new Intent(getActivity(), RxAsyncSubjectActivity.class));
+                break;
+            case 25:
+                startActivity(new Intent(getActivity(), RxBehaviorSubjectActivity.class));
+                break;
+            case 26:
+                startActivity(new Intent(getActivity(), RxCompletableActivity.class));
+                break;
+            case 27:
+                startActivity(new Intent(getActivity(), RxFlowableActivity.class));
                 break;
         }
 

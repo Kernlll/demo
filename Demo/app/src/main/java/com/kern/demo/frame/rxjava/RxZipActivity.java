@@ -12,6 +12,14 @@ import io.reactivex.functions.BiFunction;
 import io.reactivex.functions.Consumer;
 
 /**
+ * zip
+ * <p>
+ * 合并事件专用
+ * <p>
+ * 分别从两个上游事件中各取出一个组合
+ * 一个事件只能被使用一次，顺序严格按照事件发送的顺序
+ * 最终下游事件收到的是和上游事件最少的数目相同（必须两两配对，多余的舍弃)
+ * <p>
  * @Author: wangke
  */
 public class RxZipActivity extends RxOperatorBaseActivity {

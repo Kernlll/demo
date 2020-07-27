@@ -1,6 +1,16 @@
 package com.kern.demo.frame.fragment;
 
+import android.content.Intent;
+
 import com.kern.demo.CategoryBaseFragment;
+import com.kern.demo.frame.rxjava.usercase.RxCaseConcatActivity;
+import com.kern.demo.frame.rxjava.usercase.RxCaseDebounceActivity;
+import com.kern.demo.frame.rxjava.usercase.RxCaseFlatMapActivity;
+import com.kern.demo.frame.rxjava.usercase.RxCaseIntervalActivity;
+import com.kern.demo.frame.rxjava.usercase.RxCaseZipActivity;
+import com.kern.demo.frame.rxjava.usercase.RxNetSingleActivity;
+import com.kern.demo.frame.rxjava.usercase.RxNetworkActivity;
+import com.kern.demo.frame.rxjava.usercase.RxThreadActivity;
 import com.kern.demo.mode.OperatorModel;
 
 import java.util.ArrayList;
@@ -46,6 +56,31 @@ public class UseCasesFragment extends CategoryBaseFragment {
 
     @Override
     protected void itemClick(int position) {
-
+        switch (position) {
+            case 0:
+                startActivity(new Intent(getActivity(), RxNetSingleActivity.class));
+                break;
+            case 1:
+                startActivity(new Intent(getActivity(), RxNetworkActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(getActivity(), RxCaseZipActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getActivity(), RxCaseFlatMapActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(getActivity(), RxCaseConcatActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(getActivity(), RxCaseDebounceActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(getActivity(), RxCaseIntervalActivity.class));
+                break;
+            case 7:
+                startActivity(new Intent(getActivity(), RxThreadActivity.class));
+                break;
+        }
     }
 }

@@ -10,6 +10,10 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 
 /**
+ * create
+ * <p>
+ *     最常见的操作符，用于生产一个发射对象
+ *
  * @Author: wangke
  */
 public class RxCreateActivity extends RxOperatorBaseActivity {
